@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:my_weather_app/data/models/weather_condition.dart';
-import 'package:my_weather_app/presentation/cubits/location_text_field_cubit.dart';
+import 'package:my_weather_app/presentation/cubits/theme_cubit.dart';
 import 'package:my_weather_app/presentation/cubits/weather_condition_cubit.dart';
 import 'package:my_weather_app/presentation/utils/transform.dart';
 import '../components/gradient_background.dart';

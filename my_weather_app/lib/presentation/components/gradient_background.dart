@@ -1,7 +1,6 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../cubits/location_text_field_cubit.dart';
+import '../cubits/theme_cubit.dart';
 
 class GradiantBackground extends StatelessWidget{
   final Widget child;

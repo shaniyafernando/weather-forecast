@@ -1,10 +1,11 @@
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import '../models/weather_condition.dart';
 
 class WeatherConditionRepo {
-  final _baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
-  final _apiKey = '8ad6a8d6867bfb1bbe4b6a6b2a463799';
+  final _baseUrl = dotenv.env['BASE_URL'];
+  final _apiKey = dotenv.env['API_KEY'];
 
   Future<List<WeatherCondition>> getForecastForFiveDays(String city) async {
     final response = await http.get(
